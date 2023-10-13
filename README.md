@@ -4,6 +4,9 @@
 
 ## Setup instructions
 
+There are two different ways of installing dependencies needed for this project.  
+
+### Using venv
 The following instructions setups a new virtual environment for python and installs the needed libraries.  
 These instructions assumes that the user is using a Windows machine.  
 
@@ -11,6 +14,16 @@ These instructions assumes that the user is using a Windows machine.
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+```
+
+### Using poetry
+The following instructions setups a new poetry environment and installs the needed libraries. 
+Ensure that poetry is installed in your machine (https://python-poetry.org/docs/#installation), and you are using a Python version >= 3.9.  
+
+```cmd
+poetry shell
+poetry install 
+poetry run main.py
 ```
 
 ## Done by

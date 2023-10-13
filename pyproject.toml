@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "sc4002-nlp-assignment"
+version = "0.1.0"
+description = "SC4002 NLP Assignment"
+authors = ["Your Name <you@example.com>"]
+license = "none"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+gensim = "^4.3.2"
+seqeval = "^1.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
