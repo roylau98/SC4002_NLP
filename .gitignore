@@ -92,3 +92,6 @@ fabric.properties
 *.vsix
 
 .venv
+
+# alp's folder
+.idea
