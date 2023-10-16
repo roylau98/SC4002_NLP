@@ -1,0 +1,10 @@
+O O O O O O I-geo O O O O O I-geo O O O O O I-gpe O O O O O
+O O O O O O O O O O O O O O O O O O I-per O O O O O O O O O O O
+O O O O O O O O O O O I-geo I-geo O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O I-geo O O I-org I-org O O O I-gpe O O O I-geo O
+O O O O O I-gpe O O O O I-geo O O O O O O O I-gpe O O O O O
+O I-geo O O O O O O O O O O O O I-geo O I-geo O O I-geo O
+O I-org I-org I-org I-org O O O O O O O O I-geo I-tim O O O O O I-gpe O O O O O O O
+I-gpe O O O O O O O O O O I-geo O O O
+I-gpe O O O O O O O O O O O O O O I-tim O O O I-org O O O O O
