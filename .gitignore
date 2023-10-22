@@ -92,7 +92,8 @@ fabric.properties
 *.vsix
 
 .venv
-
+venv
+model_weights.pth
 # alp's folder
 .idea
 
