@@ -1,6 +1,0 @@
-O
-I-geo
-I-gpe
-I-per
-I-org
-I-tim
