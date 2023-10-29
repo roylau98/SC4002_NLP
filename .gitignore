@@ -94,6 +94,8 @@ fabric.properties
 .venv
 venv
 model_weights.pth
+modified_test_data.csv
+modified_training_data.csv
 # alp's folder
 .idea
 
