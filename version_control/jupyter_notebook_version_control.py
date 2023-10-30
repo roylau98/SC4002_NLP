@@ -1,26 +1,44 @@
-import subprocess
-import argparse
+from nbconvert import PythonExporter
+import nbformat
+import os
 
-def remove_extension(filename):
-    # Find the last occurrence of '.' to handle cases where the filename itself contains dots
-    last_dot_index = filename.rfind('.')
-    
-    # If a dot is found, remove the extension; otherwise, return the original filename
-    if last_dot_index != -1:
-        return filename[:last_dot_index]
-    else:
-        return filename
+def convert_ipynb_to_python(ipynb_file, output_folder):
+    # Load the notebook
+    with open(ipynb_file, 'r', encoding='utf-8') as nb_file:
+        notebook = nbformat.read(nb_file, as_version=4)
 
-def convert_notebook(notebook_filename, output_format):
-    subprocess.run(['jupyter', 'nbconvert', '--to', output_format, notebook_filename+'.ipynb' , '--output-dir="./version_control2"', '--output', notebook_filename])
-    print(f"File '{notebook_filename}.{output_format}' created.")
+    # Create a Python exporter
+    exporter = PythonExporter()
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Convert Jupyter Notebook to different formats.')
-    parser.add_argument('notebook_file', help='Path to the Jupyter Notebook file')
-    parser.add_argument('--output-format', '-o', default='html', help='Output format (e.g., html, pdf)')
-    args = parser.parse_args()
+    # Convert the notebook to a Python script
+    (python_script, resources) = exporter.from_notebook_node(notebook)
 
-    notebook_file = remove_extension(args.notebook_file)
+    # Define the output file path
+    output_file = os.path.join(output_folder, os.path.splitext(os.path.basename(ipynb_file))[0] + '.py')
 
-    convert_notebook(notebook_file, args.output_format)
+    # Write the Python script to the output file
+    with open(output_file, 'w', encoding='utf-8') as py_file:
+        py_file.write(python_script)
+
+    print(f"Conversion successful: {ipynb_file} -> {output_file}")
+
+def batch_convert_ipynb_to_python(input_txt, input_folder, output_folder):
+    # Create the output folder if it doesn't exist
+    os.makedirs(output_folder, exist_ok=True)
+
+    # Read the list of IPython notebooks from the text file
+    with open(input_txt, 'r', encoding='utf-8') as file:
+        ipynb_list = [line.strip() for line in file]
+
+    # Convert each IPython notebook in the list
+    for ipynb_file in ipynb_list:
+        # Construct the full file path with the input folder
+        full_path = os.path.join(input_folder, ipynb_file)
+        convert_ipynb_to_python(full_path, output_folder)
+
+# Example usage
+list_of_files = "list_of_jupyter_notebooks_to_be_converted_to_py.txt"  # Update with your file containing the list of notebook filenames
+jupyter_notebooks_folder = "./.."  # Update with the path to the directory containing the notebooks
+output_folder_path = "./output_python_scripts"
+
+batch_convert_ipynb_to_python(list_of_files, jupyter_notebooks_folder, output_folder_path)
