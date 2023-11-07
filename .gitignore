@@ -101,3 +101,5 @@ modified_training_data.csv
 
 # .ipynb_checkpoints
 .ipynb_checkpoints
+
+.jupyter_ystore.db
