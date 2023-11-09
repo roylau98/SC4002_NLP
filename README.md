@@ -61,17 +61,23 @@ After
 
 ## Explanation of sample output
 
-Part 1
+### Part 1
+
 Q1_part1.ipynb
-Q1_part2.ipynb
+
 Q1_part2.ipynb
 
-Part 2
+Q1_part2.ipynb
+
+### Part 2
 Q2_preprocessing.ipynb
 
 Q2_model_average.ipynb
+
 Q2_model_last_word.ipynb
+
 Q2_model_max_pooling.ipynb
+
 Q2_model_sum.ipynb
 
 ## Done by
@@ -82,7 +88,10 @@ Ng Yue Jie Alphaeus
 Roy Lau Run-Xuan  
 
 ## Acknowledgements
-CoNLL2023: https://github.com/TheAnig/NER-LSTM-CNN-Pytorch/tree/master/data  
+CoNLL2023: https://github.com/TheAnig/NER-LSTM-CNN-Pytorch/tree/master/data
+
 TREC: https://www.kaggle.com/datasets/thedevastator/the-trec-question-classification-dataset-a-longi/
+
 CS230 Stanford: https://github.com/cs230-stanford/cs230-code-examples/tree/master/pytorch/nlp
+
 CS230 Stanford: https://cs230.stanford.edu/blog/namedentity/
