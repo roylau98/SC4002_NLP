@@ -5,10 +5,10 @@
 ## Setup instructions
 
 The following instructions setups a new virtual environment for python and installs the needed libraries.  
-These instructions assumes that the user is using a Windows machine. Ensure that Python 3.11 is installed as well.
+These instructions assumes that the user is using a Windows machine. Ensure that Python 3.11 is installed as well, do not use Python 3.12. 
 
 ```cmd
-python -m venv .venv
+py -3.11 -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 jupyter lab
