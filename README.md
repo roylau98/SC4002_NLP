@@ -17,10 +17,41 @@ jupyter lab
 Ensure that 2 directories are created in the root folder. For "CoNLL2003_dataset/", put "eng.testa", "eng.testb" and "eng.train" into it 
 and for "TREC_dataset/" include the "test.csv" and "train.csv" from Kaggle.
 
-If the host machine that is running the code has a GPU with cuda you can install torch with cuda support instead 
+If the machine that is running the code has a GPU with cuda you can install torch with cuda support instead 
 using the command given in the PyTorch documentation https://pytorch.org/get-started/locally/
 
-## Files 
+## Folder structure and files 
+
+The following is a tree structure that shows the files found in this folder SC4002_G3. A brief description of what each file is for is included at the side.
+
+```markdown
+SC4002_G3
+├── Assignment_NLP_SC4002.pdf           # Assignment instructions
+├── f1_score_vs_epoch.png               # 
+├── Q1_part1.ipynb                      # Code for Part 1. Sequence Tagging: NER, answers question 1.1
+├── Q1_part2.ipynb                      # Code for Part 1. Sequence Tagging: NER, answers question 1.2
+├── Q1_part3.ipynb                      # Code for Part 1. Sequence Tagging: NER, contains the model and answers question 1.3
+├── Q2_model_average.ipynb              # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses average pooling and answers question 2
+├── Q2_model_last_word.ipynb            # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses last word pooling and answers question 2
+├── Q2_model_max_pooling.ipynb          # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses max pooling and answers question 2
+├── Q2_model_sum.ipynb                  # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses sum pooling and answers question 2
+├── Q2_preprocessing.ipynb              # Code for Part 2. Sentence-Level Categorization: Question Classification, contains preprocessing code
+├── README.md                           # This file
+├── requirements.txt                    # Contains the packages and libraries needed to run all the code
+├── TREC_dataset                        # Contains TREC dataset from Kaggle
+│   ├── modified_test_data.csv
+│   ├── modified_training_data.csv
+│   ├── test.csv                        # TREC test data. Replace this file if using own dataset, and rerun Q2_preprocessing.ipynb
+│   └── train.csv                       # TREC training data. Replace this file if using own dataset, and rerun Q2_preprocessing.ipynb
+├── training_information                #
+│   └── Q1_part3
+│       ├── train_metrics_list.pkl
+│       └── val_metrics_list.pkl
+└── CoNLL2003_dataset                   # Contains CoNLL2003 dataset
+    ├── eng.testa                       # CoNLL2003 development (validation) dataset
+    ├── eng.testb                       # CoNLL2003 test dataset
+    └── eng.train                       # CoNLL2003 training dataset
+```
 
 The codes are given in the form of Jupyter notebooks. Files prepended with Q1_ contains code for Part 1 (Sequence Tagging: NER), while 
 files prepended with Q2_ contains code for Part 2 (Sentence-Level Categorization: Question Classification).
