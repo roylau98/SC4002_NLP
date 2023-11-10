@@ -119,7 +119,9 @@ fc.bias torch.Size([8])                     : 8
 Total parameters                            : 725,408
 ```
 
-During each training epoch, we printed the f1 scores, and the loss for both the training and development set. A plot is shown which plot the f1 score at each training epoch.
+During each training epoch, we printed the f1 scores, and the loss for both the training and development set. This is shown in the report.
+
+The image (f1_score_vs_epoch.png) shows the plot of the f1 score (training and development) at each training epoch.
 
 A sample question is chosen from the test set (eng.trainb) which we pass through the model to predict the NER tags.
 
