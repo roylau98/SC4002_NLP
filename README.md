@@ -67,9 +67,9 @@ There are no restrictions on which files can be run first for Q1_ notebooks.
 ## Running the code
 
 After starting up jupyter lab, a browser tab will open. In the left panel, double-click on the "Source Code" folder to enter it. Double-click on any 
-notebook to open it in the right panel. You should be able to see the code now. 
+notebook to open it in the right panel. You should be able to see the code now on the right panel. 
 
-At the top left, click on "Run", then "Run All Cells".
+At the top left, click on "Run", then "Run All Cells" which will run all the code in that notebook.
 
 ## Explanation of sample output
 
