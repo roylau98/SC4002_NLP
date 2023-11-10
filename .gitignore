@@ -94,12 +94,10 @@ fabric.properties
 .venv
 venv
 *.pth
-modified_test_data.csv
-modified_training_data.csv
-# alp's folder
+
 .idea
 
-# .ipynb_checkpoints
+# Jupyter
 .ipynb_checkpoints
 
 .jupyter_ystore.db
