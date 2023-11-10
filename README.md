@@ -34,28 +34,28 @@ The following is a tree structure that shows the files found in this folder SC40
 
 ```markdown
 SC4002_G3
-├── SC4002_Report.pdf                   # Assignment report
-├── README.txt                          # This file
-├── requirements.txt                    # Contains the packages and libraries needed to run all the code
-└── Source Code                         # Folder containing the source code
-    ├── f1_score_vs_epoch.png           # Plot of f1 score in each epoch for part 1
-    ├── Q1_part1.ipynb                  # Code for Part 1. Sequence Tagging: NER, answers question 1.1
-    ├── Q1_part2.ipynb                  # Code for Part 1. Sequence Tagging: NER, answers question 1.2
-    ├── Q1_part3.ipynb                  # Code for Part 1. Sequence Tagging: NER, contains the model and answers question 1.3
-    ├── Q2_model_average.ipynb          # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses average pooling and answers question 2
-    ├── Q2_model_last_word.ipynb        # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses last word pooling and answers question 2
-    ├── Q2_model_max_pooling.ipynb      # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses max pooling and answers question 2
-    ├── Q2_model_sum.ipynb              # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses sum pooling and answers question 2
-    ├── Q2_preprocessing.ipynb          # Code for Part 2. Sentence-Level Categorization: Question Classification, contains preprocessing code
-    ├── TREC_dataset                    # Contains TREC dataset from Kaggle
-    │   ├── modified_test_data.csv      # Modified TREC test dataset to combine 2 classes into 1
-    │   ├── modified_training_data.csv  # Modified TREC training dataset to combine 2 classes into 1
-    │   ├── test.csv                    # TREC test data. Replace this file if using own dataset, and rerun Q2_preprocessing.ipynb
-    │   └── train.csv                   # TREC training data. Replace this file if using own dataset, and rerun Q2_preprocessing.ipynb
-    └── CoNLL2003_dataset               # Contains CoNLL2003 dataset
-        ├── eng.testa                   # CoNLL2003 development (validation) dataset
-        ├── eng.testb                   # CoNLL2003 test dataset
-        └── eng.train                   # CoNLL2003 training dataset
+├── SC4002_Report.pdf                     # Assignment report
+├── README.txt                            # This file
+├── requirements.txt                      # Contains the packages and libraries needed to run all the code
+└── Source Code                           # Folder containing the source code
+    ├── Q1_part3_f1_score_vs_epoch.png    # Plot of f1 score in each epoch for part 1
+    ├── Q1_part1.ipynb                    # Code for Part 1. Sequence Tagging: NER, answers question 1.1
+    ├── Q1_part2.ipynb                    # Code for Part 1. Sequence Tagging: NER, answers question 1.2
+    ├── Q1_part3.ipynb                    # Code for Part 1. Sequence Tagging: NER, contains the model and answers question 1.3
+    ├── Q2_model_average.ipynb            # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses average pooling and answers question 2
+    ├── Q2_model_last_word.ipynb          # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses last word pooling and answers question 2
+    ├── Q2_model_max_pooling.ipynb        # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses max pooling and answers question 2
+    ├── Q2_model_sum.ipynb                # Code for Part 2. Sentence-Level Categorization: Question Classification, contains the model that uses sum pooling and answers question 2
+    ├── Q2_preprocessing.ipynb            # Code for Part 2. Sentence-Level Categorization: Question Classification, contains preprocessing code
+    ├── TREC_dataset                      # Contains TREC dataset from Kaggle
+    │   ├── modified_test_data.csv        # Modified TREC test dataset to combine 2 classes into 1
+    │   ├── modified_training_data.csv    # Modified TREC training dataset to combine 2 classes into 1
+    │   ├── test.csv                      # TREC test data. Replace this file if using own dataset, and rerun Q2_preprocessing.ipynb
+    │   └── train.csv                     # TREC training data. Replace this file if using own dataset, and rerun Q2_preprocessing.ipynb
+    └── CoNLL2003_dataset                 # Contains CoNLL2003 dataset
+        ├── eng.testa                     # CoNLL2003 development (validation) dataset
+        ├── eng.testb                     # CoNLL2003 test dataset
+        └── eng.train                     # CoNLL2003 training dataset
 ```
 
 The codes are given in the form of Jupyter notebooks. Files prepended with Q1_ contains code for Part 1 (Sequence Tagging: NER), while 
@@ -121,7 +121,7 @@ Total parameters                            : 725,408
 
 During each training epoch, we printed the f1 scores, and the loss for both the training and development set. This is shown in the report.
 
-The image (f1_score_vs_epoch.png) shows the plot of the f1 score (training and development) at each training epoch.
+The image (Q1_part3_f1_score_vs_epoch.png) shows the plot of the f1 score (training and development) at each training epoch.
 
 A sample question is chosen from the test set (eng.trainb) which we pass through the model to predict the NER tags.
 
