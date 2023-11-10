@@ -34,7 +34,7 @@ The following is a tree structure that shows the files found in this folder SC40
 
 ```markdown
 SC4002_G3
-├── SC4002_Report.pdf                     # Assignment report
+├── SC4002_G3.pdf                         # Assignment report
 ├── README.txt                            # This file
 ├── requirements.txt                      # Contains the packages and libraries needed to run all the code
 └── Source Code                           # Folder containing the source code
