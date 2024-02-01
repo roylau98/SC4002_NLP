@@ -259,8 +259,8 @@ sentence = How many cars are manufactured every day ?, label = 4
 ```
 
 ## Done by
-[Poh Yang Quan Eugene](https://github.com/Eugene7997)
-[Wong Yi Pun](https://github.com/ypwong99)
+[Poh Yang Quan Eugene](https://github.com/Eugene7997)  
+[Wong Yi Pun](https://github.com/ypwong99)  
 [Jeremy U Keat](https://github.com/jeremyu25)  
 [Ng Yue Jie Alphaeus](https://github.com/AlphaeusNg)  
 [Roy Lau Run-Xuan](https://github.com/roylau98)  
